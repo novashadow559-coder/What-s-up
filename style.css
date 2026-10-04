@@ -12,11 +12,7 @@ body {
 h1 {
     font-size: 25px;
     color: blue;
-}
-p{
-    background-color:orange;
-    text-color:white;
-}
+  }
 footer{
     background:gray;
 }
