@@ -14,10 +14,11 @@ h1 {
     color: blue;
 }
 p{
-    background-color:black;
+    background-color:orange;
+    text-color:white;
 }
 footer{
-    background:orange;
+    background:gray;
 }
     /* card area */
 
