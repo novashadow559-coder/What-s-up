@@ -1,0 +1,208 @@
+body {
+    /* Deep space dark blue to pitch black gradient */
+    background: radial-gradient(circle at center, #1b2838 0%, #0a0e17 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+img{
+   max-width:100%;
+   width:280px;
+   height:180px;
+   object-fit:cover;
+   border-radius:15px;
+   margin:10px;
+   desplay-flex:center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* --- animation box--- */
+        .box {
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    }
+    /* animation section */
+  .emotion{
+      animation:move 3s infinite alternate;
+  }
+ .decision{
+     animation:spin 4s infinite alternate;
+ }
+ .discipline{
+     animation:puls 3s infinite alternate;
+ }
+ 
+ 
+          /* key fame for each */
+          
+          @keyframes move{
+           from{
+          background-color:brown;
+         transform:rotate(0deg);
+         }
+         to{
+             transform:rotate(100deg);
+             background-color:purple;
+         }
+ 
+          }
+    
+          @keyframes spin{
+              from{
+                  transform:rotate(0deg);
+                  background-color:green;
+              }
+              to{
+                  transform:rotate(90deg);
+                  box-shadow:0 0 34px red;
+                  background-color:blue;
+              }
+          }
+              @keyframes puls{
+              from{
+                  transform:rotate(0deg);
+                  background-color:pink;
+                  }
+               to{
+                   transform:rotate(90deg);
+                   background-color:red;
+               }
+              }
+              .emotion:hover{
+                  background:purple;
+                  transform:rotate(90deg);
+              }
+              .decision:hover{
+                  transform:rotate(90deg);
+                  background:blue;
+              }
+             .discipline:hover{
+                 transform:rotate(90deg);
+                 background:red;
+             }
+             /* box decoration */
+             
+             .emotion:active {
+    transform: scale(0.4);
+    background: red;
+    box-shadow: 0 0 30px red;
+}
+      .decision:active{
+          transform:rotate(360deg);
+          background:orange;
+      }
+      .discipline:active{
+          transform:scale(1.4);
+          background:blue;
+          
+      } 
+      /* paragraph */
+      /* Universal Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Image */
+img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Perfect Glassmorphism Quote Box */
+.quote-box {
+    width: 90%;                    /* Fits 90% of screen width on any phone */
+    max-width: 440px;              /* Never grows wider than 440px on tablets/PCs */
+    margin: 20px auto 40px auto;   /* Centers box horizontally with breathing room */
+    padding: 18px 16px;
+    
+    /* Sleek Frosted Glass Style */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    
+    /* Text Settings */
+    color: #f0f6fc;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    
+    /* Prevents long text/emojis from overflowing the box */
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+      
+ /* navigation */
+     .navbar {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap:15px;
+    width:290px;
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius:15px;
+    border:2px solid blue;
+    box-shadow:5px 20px 5px aqua;
+}
+
+.navbar h2 {
+    color: green;
+}
+
+.nav-links {
+  flex-direction:row;
+    display:flex;
+    gap: 20px;
+    font-size:15px;
+}
+
+.nav-links a {
+    color: blue;
+    text-decoration: none;
+    transition:0.3s;
+}
+
+    .nav-links a:hover{
+             color:cyan;
+             text-shadow:0 0 10px cyan; 
+             transform:translateY(5px); 
+    }
+         @media(max-width:800px){
+             .navbar{
+                 flex-direction:column;
+                 width:100%;
+             }
+             .navbar h2{
+                 font-size:24px;
+             }
+             .nav-links{
+                 flex-direction:colomn;
+                 gap:10px;
+                 font-size:14px;
+             }
+         }
+    

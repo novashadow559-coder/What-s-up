@@ -1,0 +1,65 @@
+body {
+    background-image: url('photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+        }
+h1 {
+    font-size: 25px;
+    color: blue;
+}
+p{
+    background-color:black;
+}
+footer{
+    background:orange;
+}
+    /* card area */
+
+.card {
+    width: 250px;
+    padding: 20px 20px;
+    margin: 1px auto;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px darkred;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    backdrop-filter:blur(10px);
+  }
+
+input {
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    border: 2px solid blue;
+    background-color: blue;
+    transition: 0.5s;
+}
+   /* button area */
+button {
+    background-color: blue;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 20px;
+    border: none;
+    margin: 15px;
+    animation: glow 3s infinite;
+}
+
+button:hover {
+    background: purple;
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 5px 15px gray;
+}
+
+button:active {
+    transform:scale(0.99);
+}
